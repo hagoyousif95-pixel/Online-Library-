@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Library Management System - تواصل</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"><h1>📚 مكتبتي</h1></div>
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="books.html">الكتب</a></li>
+                <li><a href="borrow.html">استعارة</a></li>
+                <li><a href="contact.html">تواصل</a></li>
+                <li><a href="login.html">تسجيل الدخول</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="contact-page">
+        <div class="container">
+            <h2>📩 تواصل معنا</h2>
+            <p>يسعدنا استقبال استفساراتك واقتراحاتك</p>
+
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="contactName">الاسم:</label>
+                    <input type="text" id="contactName" placeholder="أدخل اسمك" required>
+                </div>
+                <div class="form-group">
+                    <label for="contactEmail">البريد الإلكتروني:</label>
+                    <input type="email" id="contactEmail" placeholder="example@mail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="contactPhone">رقم الجوال:</label>
+                    <input type="tel" id="contactPhone" placeholder="05xxxxxxxx" required>
+                </div>
+                <div class="form-group">
+                    <label for="contactMessage">الرسالة:</label>
+                    <textarea id="contactMessage" rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">إرسال</button>
+            </form>
+
+            <!-- معلومات إضافية -->
+            <div class="contact-info">
+                <p>📧 البريد الإلكتروني: support@library.com</p>
+                <p>📞 الهاتف: +966 50 000 0000</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Online Library Management System. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

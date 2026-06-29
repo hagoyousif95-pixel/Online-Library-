@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Library Management System - الكتب</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"><h1>📚 مكتبتي</h1></div>
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="books.html">الكتب</a></li>
+                <li><a href="borrow.html">استعارة</a></li>
+                <li><a href="contact.html">تواصل</a></li>
+                <li><a href="login.html">تسجيل الدخول</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="books-page">
+        <div class="container">
+            <h2>جميع الكتب</h2>
+            
+            <!-- شريط البحث والفلترة (تفاعل JavaScript) -->
+            <div class="filter-bar">
+                <input type="text" id="searchInput" placeholder="🔍 ابحث عن كتاب...">
+                <select id="categoryFilter">
+                    <option value="all">جميع التصنيفات</option>
+                    <option value="تقنية">تقنية</option>
+                    <option value="علمية">علمية</option>
+                    <option value="أدبية">أدبية</option>
+                    <option value="تاريخية">تاريخية</option>
+                </select>
+                <button id="clearFilterBtn" class="btn btn-small">إعادة ضبط</button>
+            </div>
+
+            <!-- عرض الكتب على شكل بطاقات -->
+            <div id="booksContainer" class="book-grid">
+                <!-- سيتم عرض الكتب بواسطة JavaScript -->
+            </div>
+
+            <!-- نافذة منبثقة لعرض التفاصيل (Modal) -->
+            <div id="bookModal" class="modal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <div id="modalBody">
+                        <h3 id="modalTitle"></h3>
+                        <p id="modalAuthor"></p>
+                        <p id="modalCategory"></p>
+                        <p id="modalDescription"></p>
+                        <button id="borrowFromModalBtn" class="btn btn-primary">استعارة الكتاب</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Online Library Management System. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

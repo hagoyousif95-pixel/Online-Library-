@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Library Management System - استعارة</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"><h1>📚 مكتبتي</h1></div>
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="books.html">الكتب</a></li>
+                <li><a href="borrow.html">استعارة</a></li>
+                <li><a href="contact.html">تواصل</a></li>
+                <li><a href="login.html">تسجيل الدخول</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="borrow-page">
+        <div class="container">
+            <h2>📖 استعارة كتاب</h2>
+            <p>اختر كتاباً من القائمة وأكمل عملية الاستعارة</p>
+
+            <!-- نموذج استعارة -->
+            <form id="borrowForm">
+                <div class="form-group">
+                    <label for="borrowBook">اختر الكتاب:</label>
+                    <select id="borrowBook" required>
+                        <option value="">-- اختر --</option>
+                        <option value="أساسيات البرمجة">أساسيات البرمجة</option>
+                        <option value="علم البيانات">علم البيانات</option>
+                        <option value="التسويق الرقمي">التسويق الرقمي</option>
+                        <option value="تاريخ العرب">تاريخ العرب</option>
+                        <option value="الأدب العالمي">الأدب العالمي</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="borrowerName">اسم المستعير:</label>
+                    <input type="text" id="borrowerName" placeholder="أدخل اسمك" required>
+                </div>
+                <div class="form-group">
+                    <label for="borrowerEmail">البريد الإلكتروني:</label>
+                    <input type="email" id="borrowerEmail" placeholder="example@mail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="borrowDate">تاريخ الاستعارة:</label>
+                    <input type="date" id="borrowDate" required>
+                </div>
+                <button type="submit" class="btn btn-primary">استعير الآن</button>
+            </form>
+
+            <!-- عرض قائمة الكتب المستعارة (بيانات وهمية) -->
+            <div class="borrowed-list">
+                <h3>📋 الكتب المستعارة حالياً</h3>
+                <ul id="borrowedBooksList">
+                    <!-- تظهر بواسطة JavaScript -->
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Online Library Management System. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
